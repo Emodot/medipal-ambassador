@@ -20,13 +20,13 @@
           <button>Become an Ambassador</button>
         </div>
       </div>
-      <div class="hamburger" onclick="showMobileMenu">
+      <div class="hamburger" onclick="showMobileMenu()">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
     </div>
-    <div id="myLinks">
+    <div id="myLinks" class="come-down">
       <a href="#">Solutions</a>
       <a href="#">Company</a>
       <a href="#">Blog</a>
@@ -274,18 +274,18 @@
       <a href="#"><img class="social-icon" src="assets/icons/InstagramLogo.svg" alt=""></a>
     </div>
   </div>
-
-  <script>
-    function showMobileMenu () {
-      var menuId = document.getElementById("myLinks");
-      if (menuId.style.display === "block") {
-        menuId.style.display = "none";
-      } else {
-        menuId.style.display = "block";
-      }
-    }
-  </script>
 </body>
+
+<script>
+  function showMobileMenu () {
+    var menuId = document.getElementById("myLinks");
+    if (menuId.style.display === "block") {
+      menuId.style.display = "none";
+    } else {
+      menuId.style.display = "block";
+    }
+  }
+</script>
 
 <style scoped>
 #myLinks {
