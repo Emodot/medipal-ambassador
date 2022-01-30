@@ -34,7 +34,11 @@
     </div>
     <div class="hero-section">
       <div class="hero-text">
-        <h1 class="head">Promote Quality Healthcare in your institution</h1>
+        <div class="slider-box">
+          <h1 class="head come-down">Promote Quality Healthcare in your institution</h1>
+          <h1 class="head come-down">Become a Campus Ambassador </h1>
+          <h1 class="head come-down">Learn Career-relevant skills</h1>
+        </div>
         <p class="sub-head">Medipal Ambassadorship program is aimed at equipping students in their various fields
           with outstanding workplace skills and experience while promoting good health 
           and wellbeing (SDG 3) among students in the institution
@@ -285,6 +289,38 @@
       menuId.style.display = "block";
     }
   }
+  // var slider = document.querySelectorAll('.slider-box h1')
+  // slide();
+
+  // function slide(){
+  //   for (var i  = 0; i < slider.length; i++) {
+  //     if (slider[i].classList.contains('visible')) {
+  //       slider[i].classList.remove('visible')
+
+  //       if(i === slider.length - 1) {
+  //         i = -1
+  //       }
+  //       slider[i + 1].classList.add('visible')
+  //       setTimeout(showSlides, 2000);
+  //       break
+  //     }
+  //   }
+  // }
+
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("head");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
 </script>
 
 <style scoped>
@@ -368,6 +404,11 @@ header {
   font-size: 45px;
   font-weight: 700;
   width: 80%;
+  /* display: none; */
+}
+
+.visible {
+  /* display: block; */
 }
 
 .sub-head {
