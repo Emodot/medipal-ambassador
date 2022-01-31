@@ -33,19 +33,37 @@
       <a href="#">Contact</a>
     </div>
     <div class="hero-section">
-      <div class="hero-text">
-        <div class="slider-box">
-          <h1 class="head come-down">Promote Quality Healthcare in your institution</h1>
-          <h1 class="head come-down">Become a Campus Ambassador </h1>
-          <h1 class="head come-down">Learn Career-relevant skills</h1>
+      <div class="slider-box">
+        <div class="hero-text come-down">
+          <h1 class="head">Promote Quality Healthcare in your institution</h1>
+          <p class="sub-head">Medipal Ambassadorship program is aimed at equipping students in their various fields
+            with outstanding workplace skills and experience while promoting good health 
+            and wellbeing (SDG 3) among students in the institution
+          </p>
+          <button class="apply">
+            Apply Now
+          </button>
         </div>
-        <p class="sub-head">Medipal Ambassadorship program is aimed at equipping students in their various fields
-          with outstanding workplace skills and experience while promoting good health 
-          and wellbeing (SDG 3) among students in the institution
-        </p>
-        <button class="apply">
-          Apply Now
-        </button>
+        <div class="hero-text come-down">
+          <h1 class="head">Become a Campus Ambassador </h1>
+          <p class="sub-head">Medipal Ambassadorship program is aimed at equipping students in their various fields
+            with outstanding workplace skills and experience while promoting good health 
+            and wellbeing (SDG 3) among students in the institution
+          </p>
+          <button class="apply">
+            Apply Now
+          </button>
+        </div>
+        <div class="hero-text come-down">
+          <h1 class="head">Learn Career-relevant skills</h1>
+          <p class="sub-head">Medipal Ambassadorship program is aimed at equipping students in their various fields
+            with outstanding workplace skills and experience while promoting good health 
+            and wellbeing (SDG 3) among students in the institution
+          </p>
+          <button class="apply">
+            Apply Now
+          </button>
+        </div>
       </div>
       <div class="hero-image">
         <img src="assets/img/pexels-keira-burton-6147070 1.png" alt="">
@@ -312,7 +330,7 @@ showSlides();
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("head");
+  var slides = document.getElementsByClassName("hero-text");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
@@ -381,7 +399,7 @@ header {
 }
 
 .nav-btn button {
-  background-color: #66D3FA;
+  background-color: #ff5b1f;
   color: #fff;
   border: none;
   padding: 15px 20px;
@@ -394,10 +412,15 @@ header {
   padding-top: 40px;
 }
 
-.hero-text {
+.slider-box {
   flex-basis: 65%;
   padding-top: 5rem;
 }
+/* 
+.hero-text {
+  flex-basis: 65%;
+  padding-top: 5rem;
+} */
 
 .head {
   color: #fff;
@@ -431,7 +454,7 @@ header {
 }
 
 .apply {
-  background-color: #66D3FA;
+  background-color: #ff5b1f;
   color: #fff;
   border: none;
   padding: 15px 20px;
@@ -588,7 +611,7 @@ header {
 }
 
 .apply-ambassador {
-  background-color: #66D3FA;
+  background-color: #ff5b1f;
   color: #fff;
   border: none;
   padding: 15px 20px;
@@ -833,10 +856,16 @@ hr {
     padding-top: 30px;
   }
 
+  .slider-box {
+    flex-basis: 65%;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+  }
+/*   
   .hero-text {
     flex-basis: 65%;
     padding-top: 5rem;
-  }
+  } */
 
   .head {
     font-size: 35px;
@@ -1165,12 +1194,8 @@ hr {
   }
 
   .nav-btn button {
-    background-color: #66D3FA;
-    color: #fff;
-    border: none;
     padding: 15px 20px;
     border-radius: 30px;
-    cursor: pointer;
   }
 
   .hero-section {
@@ -1208,12 +1233,7 @@ hr {
   }
 
   .apply {
-    background-color: #66D3FA;
-    color: #fff;
-    border: none;
     padding: 15px 20px;
-    border-radius: 30px;
-    cursor: pointer;
   }
 
   /* SECTION 1  */
